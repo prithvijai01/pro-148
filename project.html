@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"> 
+
+        </script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky>
+            </a-sky>
+            
+            <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15"> </a-camera>
+        <a-assets>
+    
+          <a-asset-item src="./assets/girl/scene.gltf" id="girl"></a-asset-item>
+          <a-asset-item src="./assets/cat/scene.gltf" id="cat"></a-asset-item>
+          <a-asset-item src="./assets/bench/scene.gltf" id="bench"></a-asset-item>
+          <a-asset-item src="./assets/street/scene.gltf" id="street"></a-asset-item>
+          <a-asset-item src="./assets/lamp/scene.gltf" id="lamp"></a-asset-item>
+      
+          </a-assets >
+          <a-entity>
+          <a-entity scale="0.02 0.04 0.03" gltf-model="#street" position="0 0 -1" rotation="0 90 0" ></a-entity>
+          <a-entity scale="0.02 0.04 0.03" gltf-model="#street" position="0 0 3" rotation="0 90 0" ></a-entity>
+          </a-entity>
+          <a-entity scale="0.04 0.03 0.03" gltf-model="#cat" position="3 1 2" rotation="0 90 0" ></a-entity>
+          <a-entity scale="2 2 2" gltf-model="#bench" position="0 0 4" ></a-entity>
+          <a-entity scale="0.5 0.5 0.5" gltf-model="#lamp" position="0 0 -1"  ></a-entity>
+         
+        </a-scene>
+
+    </body>
+</html>
